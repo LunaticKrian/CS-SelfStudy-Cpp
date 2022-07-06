@@ -3,4 +3,4 @@ project(CS_C___StudyProject)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(CS_C___StudyProject chapter7/01-ObjectOriented.cpp)
+add_executable(CS_C___StudyProject STL-Programming/02-Vector-Custom.cpp)

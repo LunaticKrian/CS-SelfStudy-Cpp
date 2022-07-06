@@ -5,27 +5,27 @@
 #include <iostream>
 #include <string>
 
-// å®šä¹‰ä¸€ä¸ªç±»ï¼š
+// ¶¨ÒåÒ»¸öÀà£º
 class Student{
 
-// å…¬æœ‰å±æ€§ï¼š
+// ¹«ÓĞÊôĞÔ£º
 public:
-    // å±æ€§ï¼š
+    // ÊôĞÔ£º
     std::string name;
     std::string stuNo;
 
-    // è¡Œä¸ºï¼š
+    // ĞĞÎª£º
     std::string showInfo(){
-        std::string info = "å­¦ç”Ÿä¿¡æ¯ï¼š" + this->stuNo + " " + this->name;
+        std::string info = "Ñ§ÉúĞÅÏ¢£º" + this->stuNo + " " + this->name;
         std::cout << this->stuNo << "\t" << this->name << std::endl;
 
         return info;
     }
 
-    // æ„é€ å‡½æ•°ï¼š
+    // ¹¹Ôìº¯Êı£º
     Student(){
-        // è¿™æ˜¯ä¸€ä¸ªæ„é€ å‡½æ•°ï¼š
-        std::cout << "æ„é€ ç±»å¯¹è±¡ï¼" << std::endl;
+        // ÕâÊÇÒ»¸ö¹¹Ôìº¯Êı£º
+        std::cout << "¹¹ÔìÀà¶ÔÏó£¡" << std::endl;
     }
 
     Student(std::string name, int age, std::string stuNo){
@@ -34,20 +34,20 @@ public:
         this->stuNo = stuNo;
     }
 
-    // ææ„å‡½æ•°ï¼š
+    // Îö¹¹º¯Êı£º
     ~Student(){
-        // è¿™æ˜¯ä¸€ä¸ªææ„å‡½æ•°ï¼š
-        std::cout << "é”€æ¯ç±»å®ä¾‹å¯¹è±¡ï¼" << std::endl;
+        // ÕâÊÇÒ»¸öÎö¹¹º¯Êı£º
+        std::cout << "Ïú»ÙÀàÊµÀı¶ÔÏó£¡" << std::endl;
     }
 
-// ç§æœ‰å±æ€§ï¼š
+// Ë½ÓĞÊôĞÔ£º
 private:
     int age;
 };
 
 
 int main(){
-    //å®ä¾‹åŒ–ç±»ï¼š
+    //ÊµÀı»¯Àà£º
     Student student = Student();
 
     return 0;
